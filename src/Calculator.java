@@ -10,23 +10,8 @@ public class Calculator implements ActionListener {
     JFrame jf;
 
     JLabel displayLabel;
-    JButton sevenButton;
-    JButton eightButton;
-    JButton nineButton;
-    JButton fourButton;
-    JButton fiveButton;
-    JButton sixButton;
-    JButton oneButton;
-    JButton twoButton;
-    JButton threeButton;
-    JButton dotButton;
-    JButton zeroButton;
-    JButton equalButton;
-    JButton divButton;
-    JButton mulButton;
-    JButton minusButton;
-    JButton plusButton, clearButton;
-
+    JButton sevenButton,eightButton,nineButton,fourButton,fiveButton,sixButton,oneButton,twoButton,threeButton;
+    JButton dotButton,zeroButton,equalButton,divButton,mulButton,minusButton,plusButton,clearButton;
 
     public Calculator() {
         jf = new JFrame("Calculator");
