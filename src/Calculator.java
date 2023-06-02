@@ -10,16 +10,17 @@ public class Calculator implements ActionListener {
     JFrame jf;
     JLabel displayLabel;
     JButton sevenButton,eightButton,nineButton,fourButton,fiveButton,sixButton,oneButton,twoButton,threeButton;
-    JButton dotButton,zeroButton,equalButton,divButton,mulButton,minusButton,plusButton,clearButton;
+    JButton dotButton,zeroButton,equalButton,divButton,mulButton,minusButton,plusButton,clearButton,modulasButton;
 
     public Calculator() {
         jf = new JFrame("Calculator");
         jf.setLayout(null);
-        jf.setSize(600, 600);
+        jf.setSize(540, 600);
         jf.setLocation(300, 50);
 
         displayLabel = new JLabel();
-        displayLabel.setBounds(30, 50, 540, 40);
+        displayLabel.setFont(new Font("Serif", Font.PLAIN, 30));
+        displayLabel.setBounds(30, 30, 480, 80);
         displayLabel.setBackground(Color.gray);
         displayLabel.setOpaque(true);
         displayLabel.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -127,6 +128,12 @@ public class Calculator implements ActionListener {
         clearButton.setFont(new Font("Arial", Font.PLAIN, 40));
         clearButton.addActionListener(this);
         jf.add(clearButton);
+
+        modulasButton = new JButton("%");
+        modulasButton.setBounds(430, 330, 80, 80);
+        modulasButton.setFont(new Font("Arial", Font.PLAIN, 40));
+        modulasButton.addActionListener(this);
+        jf.add(modulasButton);
 
 
         jf.setVisible(true);
@@ -236,6 +243,9 @@ public class Calculator implements ActionListener {
 
         } else if (e.getSource() == clearButton) {
             displayLabel.setText("");
+        } else if (e.getSource()==modulasButton) {
+            displayLabel.setText("%");
+
         }
 
     }
