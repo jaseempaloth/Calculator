@@ -8,7 +8,6 @@ public class Calculator implements ActionListener {
     boolean isOperatorClicked = false;
     String oldValue;
     JFrame jf;
-
     JLabel displayLabel;
     JButton sevenButton,eightButton,nineButton,fourButton,fiveButton,sixButton,oneButton,twoButton,threeButton;
     JButton dotButton,zeroButton,equalButton,divButton,mulButton,minusButton,plusButton,clearButton;
